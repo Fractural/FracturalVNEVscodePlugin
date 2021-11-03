@@ -7,7 +7,7 @@
   "author": {
     "name": "Atlinx"
   },
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"engines": {
 		"vscode": "^1.61.0"
 	},
@@ -16,6 +16,10 @@
     "Programming Languages",
     "Other"
 	],
+  "galleryBanner": {
+    "color": "#244D66",
+    "theme": "dark"
+  },
   "bugs": {
     "url": "https://github.com/Fractural/FracturalVNEVscodePlugin/issues"
   },
