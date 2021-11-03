@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "comment.line.storyscript",
-					"match": "#.+\b"
+					"match": "#.*"
 				}
 			] 
 		},
