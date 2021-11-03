@@ -1,0 +1,81 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "StoryScript",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#identifiers"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.storyscript",
+					"match": "#.+\b"
+				}
+			] 
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.storyscript",
+					"match": "(==|=|<=|>=)"
+				},
+				{
+					"name": "keyword.operator.storyscript",
+					"match": "\\b(not|and|or|true|false)\\b"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.storyscript",
+					"match": "\\b(var|if|elif|else|pass|label|choice|transition|animate|with|show|hide|jump|move|pass|pause|remove|scene|sound|import)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.storyscript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.storyscript",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"name": "constant.numeric.storyscript",
+			"match": "\\d+(?:\\.\\d+)?"
+		},
+		"functions": {
+			"name": "entity.name.function.storyscript",
+			"match": "\\w+(?=\\(.*\\))"
+		},
+		"identifiers": {
+			"name": "entity.name",
+			"match": "\\b\\w+\\b"
+		}
+	},
+	"scopeName": "source.storyscript"
+}

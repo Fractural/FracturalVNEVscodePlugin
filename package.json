@@ -1,16 +1,31 @@
 {
+  "publisher": "Fractural",
   "name": "fracturalvnetools",
 	"displayName": "FracturalVNETools",
 	"description": "VSCode extension for Fractural Visual Novel Engine.",
+  "author": {
+    "name": "Atlinx"
+  },
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.61.0"
 	},
 	"categories": [
-		"Other"
+		"Languages",
+    "Programming Languages",
+    "Other"
 	],
+    "bugs": {
+    "url": "https://github.com/Fractural/FracturalVNEVscodePlugin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fractural/FracturalVNEVscodePlugin.git"
+  },
+  "homepage": "https://github.com/Fractural/FracturalVNEVscodePlugin",
+  "license": "See license in LICENSE.txt",
 	"activationEvents": [
-        "onCommand:fracturalvnetools.helloWorld"
+
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
@@ -19,7 +34,18 @@
 				"command": "fracturalvnetools.helloWorld",
 				"title": "Hello World"
 			}
-		]
+		],
+        "languages": [{
+            "id": "storyscript",
+            "aliases": ["StoryScript", "storyscript"],
+            "extensions": [".storyscript",".ss"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "storyscript",
+            "scopeName": "source.storyscript",
+            "path": "./syntaxes/storyscript.tmLanguage.json"
+        }]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
