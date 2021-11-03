@@ -1,12 +1,13 @@
 {
   "publisher": "Fractural",
   "name": "fracturalvnetools",
-	"displayName": "FracturalVNETools",
+	"displayName": "Fractural VNE Tools",
+  "icon": "logo_transparent.png",
 	"description": "VSCode extension for Fractural Visual Novel Engine.",
   "author": {
     "name": "Atlinx"
   },
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.61.0"
 	},
@@ -15,7 +16,7 @@
     "Programming Languages",
     "Other"
 	],
-    "bugs": {
+  "bugs": {
     "url": "https://github.com/Fractural/FracturalVNEVscodePlugin/issues"
   },
   "repository": {
@@ -23,7 +24,7 @@
     "url": "https://github.com/Fractural/FracturalVNEVscodePlugin.git"
   },
   "homepage": "https://github.com/Fractural/FracturalVNEVscodePlugin",
-  "license": "See license in LICENSE.txt",
+  "license": "See license in LICENSE.md",
 	"activationEvents": [
 
 	],
